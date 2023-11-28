@@ -4,6 +4,11 @@
 
 ## References
 
+- [「Let's build a browser engine!」を読んで Rust で簡易レンダリングエンジンを作った](https://dackdive.hateblo.jp/entry/2021/02/23/113522)
+
+  - [Inside look at modern web browser (part 3)](https://developer.chrome.com/blog/inside-browser-part3/)
+  - https://github.com/zaki-yama/rust-toy-browser-engine
+
 - [Populating the page: how browsers work](https://www.linkedin.com/pulse/understanding-browser-rendering-critical-path-divyansh-singh/)
 
 - [How browser rendering works — behind the scenes](https://blog.logrocket.com/how-browser-rendering-works-behind-scenes/)
