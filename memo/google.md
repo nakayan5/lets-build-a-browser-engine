@@ -4,6 +4,10 @@
 レンダラー プロセスは、タブ内で発生するすべての処理を担当します。レンダラー プロセスでは、メイン スレッドがユーザーに送信するコードのほとんどを処理します。Web ワーカーやサービス ワーカーを使用すると、JavaScript の一部がワーカー スレッドで処理されることがあります。コンポジタースレッドとラスタースレッドもレンダラー プロセス内で実行され、ページを効率的かつスムーズにレンダリングします。
 レンダラー プロセスの主な仕事は、HTML、CSS、JavaScript をユーザーが操作できる Web ページに変換することです。
 
+<p align="center">
+  <img src="https://wd.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/uIqf0QQZxF6mHPDWFEjz.png?auto=format&w=800" />
+</p>
+
 ## Parsing
 
 ### Construction of a DOM
