@@ -18,3 +18,7 @@
 - [Deno で簡易レンダリングエンジンを作ってみた](https://zenn.dev/ryo_kawamata/articles/920baf76bfdf2e)
 
 - [robinson](https://github.com/mbrubeck/robinson)
+
+- https://github.com/qnighy/htstream
+  - [HTMLパーサーの設計・実装ノート (1) 字句解析](https://zenn.dev/qnighy/articles/0c9a49fd00069a)
+  - [HTMLパーサーの設計・実装ノート (2) 構文解析](https://zenn.dev/qnighy/articles/1a6ec268986cfd)
