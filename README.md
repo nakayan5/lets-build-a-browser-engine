@@ -4,6 +4,8 @@
 
 ## References
 
+記事
+
 - [「Let's build a browser engine!」を読んで Rust で簡易レンダリングエンジンを作った](https://dackdive.hateblo.jp/entry/2021/02/23/113522)
 
   - [Inside look at modern web browser (part 3)](https://developer.chrome.com/blog/inside-browser-part3/)
@@ -17,4 +19,12 @@
 
 - [Deno で簡易レンダリングエンジンを作ってみた](https://zenn.dev/ryo_kawamata/articles/920baf76bfdf2e)
 
+- [How web browsers work - parsing the HTML (part 3, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-html-part-3-with-illustrations-45fi)
+
+実装
+
 - [robinson](https://github.com/mbrubeck/robinson)
+
+- https://github.com/qnighy/htstream
+  - [HTMLパーサーの設計・実装ノート (1) 字句解析](https://zenn.dev/qnighy/articles/0c9a49fd00069a)
+  - [HTMLパーサーの設計・実装ノート (2) 構文解析](https://zenn.dev/qnighy/articles/1a6ec268986cfd)
