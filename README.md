@@ -18,19 +18,19 @@ parse_nodes --> consume_whitespace
 consume_whitespace --> parse_node
 
 <!-- フェーズ２ -->
-parse_node --> parse_element
-parse_node --> parse_text
+<!-- parse_node --> parse_element -->
+<!-- parse_node --> parse_text -->
 
 <!-- フェーズ３ -->
-parse_element　--> Node
-parse_text --> Node
+<!-- parse_element　--> Node
+parse_text --> Node -->
 
 <!-- フェーズ３ -->
 
 <!-- 最終フェーズ -->
-Node --> nodes_length
+<!-- Node --> nodes_length
 nodes_length --> root_element: if nodes_length == 1
-nodes_length --> dom_elem : if nodes_length != 1
+nodes_length --> dom_elem : if nodes_length != 1 -->
 
 ```
 
