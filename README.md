@@ -20,6 +20,13 @@ consume_whitespace --> parse_node
 parse_node --> parse_element
 parse_node --> parse_text
 
+parse_element　--> Node
+parse_text --> Node
+
+Node --> nodes_length
+nodes_length --> root_element: if nodes_length == 1
+nodes_length --> dom_elem : if nodes_length != 1
+
 ```
 
 ## References
