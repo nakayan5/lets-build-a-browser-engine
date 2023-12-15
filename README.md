@@ -14,7 +14,7 @@ state nodes_length <<choice>>
 parse --> parse_nodes
 parse_nodes --> nodes_length
 nodes_length --> root element: if nodes_length == 1
-nodes_length --> dom.elem : if nodes_length != 1
+nodes_length --> dom_elem : if nodes_length != 1
 ```
 
 ```mermaid
