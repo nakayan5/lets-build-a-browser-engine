@@ -8,7 +8,8 @@
 
 ```mermaid
 stateDiagram-v2
-state if_state <<choice>>
+state nodes.length <<choice>>
+
 [*] --> parse
 parse --> parse_nodes
 parse_nodes --> nodes.length
