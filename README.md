@@ -9,15 +9,11 @@
 ```mermaid
 stateDiagram-v2
 state nodes.length <<choice>>
-
 [*] --> parse
 parse --> parse_nodes
 parse_nodes --> nodes.length
 nodes.length --> root element: if nodes.length == 1
 nodes.length --> dom.elem : if nodes.length != 1
-
-```
-
 ```
 
 ## References
@@ -50,4 +46,7 @@ nodes.length --> dom.elem : if nodes.length != 1
 その他
 
 - https://shikiyura.com/2022/08/install_the_multiple-runtime-versions_management_tool__asdf/
+
+```
+
 ```
