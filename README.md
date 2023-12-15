@@ -14,7 +14,7 @@ state nodes.length <<choice>>
 parse --> parse_nodes
 parse_nodes --> nodes.length
 nodes.length --> root element: if 1
-nodes.length --> dom.elem :
+nodes.length --> dom.elem : if > 1
 
 ```
 
