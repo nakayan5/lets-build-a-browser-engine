@@ -7,42 +7,13 @@
 ## Part2
 
 ```mermaid
-flowchart TD
-    A[parse Function] -->|Creates Parser instance| B(Parser Instance)
-    B --> C{parse_nodes}
-    C -->|Loop over content| D[parse_node]
-    D -->|Check next character| E{Is '<' ?}
-    E -->|Yes| F[parse_element]
-    E -->|No| G[parse_text]
-    F --> H[parse_tag_name for opening tag]
-    H --> I[parse_attributes]
-    I --> J[Recursively call parse_nodes for children]
-    J --> K[parse_tag_name for closing tag]
-    K --> L[Return DOM element node]
-    G --> M[Consume text until '<' and return DOM text node]
-    C --> N[Return nodes array]
-    N --> O{Is nodes length 1?}
-    O -->|Yes| P[Return single node]
-    O -->|No| Q[Create and return 'html' element with nodes]
-
-    click A "javascript:void(0);" "Function to parse HTML document"
-    click B "javascript:void(0);" "Parser instance with current position and input"
-    click C "javascript:void(0);" "Function to parse multiple nodes"
-    click D "javascript:void(0);" "Function to parse a single node"
-    click E "javascript:void(0);" "Decision based on the next character"
-    click F "javascript:void(0);" "Function to parse an element node"
-    click G "javascript:void(0);" "Function to parse a text node"
-    click H "javascript:void(0);" "Function to parse the tag name of an opening tag"
-    click I "javascript:void(0);" "Function to parse attributes of a tag"
-    click J "javascript:void(0);" "Recursive call to parse child nodes"
-    click K "javascript:void(0);" "Function to parse the tag name of a closing tag"
-    click L "javascript:void(0);" "Return the parsed element node"
-    click M "javascript:void(0);" "Consume and return text until the next '<'"
-    click N "javascript:void(0);" "Return an array of parsed nodes"
-    click O "javascript:void(0);" "Decision based on the length of nodes array"
-    click P "javascript:void(0);" "Return the single node if only one is present"
-    click Q "javascript:void(0);" "Create and return a new 'html' element node"
-
+stateDiagram-v2
+state if_state <<choice>>
+[*] --> parse
+parse --> parse_nodes
+parse_nodes --> nodes.length
+nodes.length --> root element: if 1
+nodes.length --> dom.elem :
 
 ```
 
