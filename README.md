@@ -10,20 +10,28 @@
 stateDiagram-v2
 state nodes_length <<choice>>
 
+
 [*] --> parse
 parse --> parse_nodes
-parse_nodes --> nodes_length
+<!-- フェーズ１ -->
+parse_nodes --> consume_whitespace
+consume_whitespace --> parse_node
+
+<!-- フェーズ２ -->
+parse_node --> parse_element
+parse_node --> parse_text
+
+<!-- フェーズ３ -->
+parse_element　--> Node
+parse_text --> Node
+
+<!-- フェーズ３ -->
+
+<!-- 最終フェーズ -->
+Node --> nodes_length
 nodes_length --> root_element: if nodes_length == 1
 nodes_length --> dom_elem : if nodes_length != 1
-```
 
-```mermaid
-stateDiagram-v2
-state if_state <<choice>>
-[*] --> IsPositive
-IsPositive --> if_state
-if_state --> False: if n < 0
-if_state --> True : if n >= 0
 ```
 
 ## References
