@@ -11,7 +11,7 @@ stateDiagram-v2
 state nodes_length <<choice>>
 
 
-["<html><div id="root" /><html/>"] --> parse
+[html] --> parse
 parse --> parse_nodes
 
 parse_nodes --> consume_whitespace
