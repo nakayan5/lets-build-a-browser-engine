@@ -13,11 +13,10 @@ state nodes_length <<choice>>
 
 [*] --> parse
 parse --> parse_nodes
-<!-- フェーズ１ -->
+
 parse_nodes --> consume_whitespace
 consume_whitespace --> parse_node
 
-<!-- フェーズ２ -->
 parse_node --> parse_element
 parse_node --> parse_text
 
