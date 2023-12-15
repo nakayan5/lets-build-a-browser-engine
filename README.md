@@ -6,6 +6,8 @@
 
 ## Part2
 
+HTML の文字列を受け取って、DOM ツリーを構築する。
+
 ```mermaid
 stateDiagram-v2
 state nodes_length <<choice>>
