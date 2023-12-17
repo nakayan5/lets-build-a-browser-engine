@@ -29,6 +29,24 @@ nodes_length --> dom_elem : if nodes_length != 1
 
 ```
 
+## part3
+
+タグ名、ID、'.'で始まる任意の数のクラス名をサポートする。
+
+```mermaid
+stateDiagram-v2
+state nodes_length <<choice>>
+
+[css] --> parse
+parse --> parse_rules
+parse_rules --> parse_rule
+parse_rule --> parse_selectors
+parse_rule --> parse_declarations
+parse_selectors --> parse_rules
+parse_declarations --> parse_rules
+
+```
+
 ## References
 
 記事
@@ -59,7 +77,3 @@ nodes_length --> dom_elem : if nodes_length != 1
 その他
 
 - https://shikiyura.com/2022/08/install_the_multiple-runtime-versions_management_tool__asdf/
-
-```
-
-```
