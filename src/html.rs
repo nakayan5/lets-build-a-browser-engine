@@ -47,7 +47,7 @@ impl Parser {
 
     // Consume and discard zero or more whitespace characters.
     fn consume_whitespace(&mut self) {
-        self.consume_while(CharExt::is_whitespace);
+        self.consume_while(char::is_whitespace);
     }
 
     // HTMLタグの名前を解析します。
@@ -55,11 +55,9 @@ impl Parser {
     // <div>や<span>といったタグにおいて、"div"や"span"という文字列を抽出します。
     fn parse_tag_name(&mut self) -> String {
         self.consume_while(|c| match c {
-            'a'..'z' | 'A'..'Z' | '0'..'9' => true,
+            'a'..='z' | 'A'..='Z' | '0'..='9' => true,
             _ => false,
         })
-
-        // return "sample".to_owned();
     }
 
     // 単一のノード（要素またはテキスト）を解析します。
