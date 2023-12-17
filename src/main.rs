@@ -1,8 +1,9 @@
 pub mod css;
 pub mod dom;
 pub mod html;
+pub mod style;
 
-fn main() {
+pub fn main() {
     // let var = dom::text("Hello, world!".to_string());
     // println!("----------- {:?}", var);
 
