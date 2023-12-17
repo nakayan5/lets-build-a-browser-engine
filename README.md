@@ -40,10 +40,11 @@ state nodes_length <<choice>>
 [css] --> parse
 parse --> parse_rules
 parse_rules --> parse_rule
+parse_rule --> parse_rules
 parse_rule --> parse_selectors
 parse_rule --> parse_declarations
-parse_selectors --> parse_rules
-parse_declarations --> parse_rules
+parse_selectors --> parse_rule
+parse_declarations --> parse_rule
 
 ```
 
