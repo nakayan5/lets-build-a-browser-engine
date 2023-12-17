@@ -196,7 +196,7 @@ impl Parser {
 
         Declaration {
             name: property_name,
-            value: value,
+            value,
         }
     }
 
