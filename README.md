@@ -37,7 +37,7 @@ nodes_length --> dom_elem : if nodes_length != 1
 stateDiagram-v2
   state end <<choice>>
 
-  classDef parent height:100px
+  classDef parent display:flex; align-items:center; justify-content:center; background-color:#fff; border-radius:5px; padding:10px;
 
   [css] --> parse
   parse --> parse_rules:::parent
