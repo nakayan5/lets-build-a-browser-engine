@@ -35,22 +35,23 @@ nodes_length --> dom_elem : if nodes_length != 1
 
 ```mermaid
 stateDiagram-v2
-state end <<choice>>
+  state end <<choice>>
 
-[css] --> parse
-parse --> parse_rules
-parse_rules --> end
+  classDef parent height:100px
 
-end --> Stylesheet
-end --> parse_rule
+  [css] --> parse
+  parse --> parse_rules:::parent
+  parse_rules --> end
 
-parse_rule --> parse_rules
+  end --> Stylesheet: if end true
+  end --> parse_rule: if end false
 
-parse_rule --> parse_selectors
-parse_rule --> parse_declarations
-parse_selectors --> parse_rule
-parse_declarations --> parse_rule
+  parse_rule --> parse_rules
 
+  parse_rule --> parse_selectors
+  parse_rule --> parse_declarations
+  parse_selectors --> parse_rule
+  parse_declarations --> parse_rule
 ```
 
 ## References
