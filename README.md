@@ -2,6 +2,8 @@
 
 [Let's build a browser engine!](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)を読んで、ブラウザエンジンを作ってみる。
 
+![image](https://limpet.net/mbrubeck/images/2014/pipeline.svg)
+
 ## Part1 & Part2
 
 HTML の文字列を受け取って、DOM ツリーを構築する。
@@ -60,6 +62,11 @@ DOM ツリー内の各ノードはスタイル ツリー内に正確に 1 つの
 スタイル ツリーを構築する最初のステップは、セレクタのマッチングです。
 単純なセレクタが要素にマッチするかどうかは、要素そのものを見ればわかります。
 複合セレクタをマッチさせるには、DOM ツリーを走査して要素の兄弟や親などを調べる必要があります。
+
+## part5 & part6
+
+スタイル ツリーを 2 次元空間の矩形に変換するレイアウト モジュール。
+layout モジュールの入力はパート 4 のスタイルツリーで、出力はさらに別のツリーのレイアウトツリーです。
 
 ## References
 
