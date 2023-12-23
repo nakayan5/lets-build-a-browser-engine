@@ -2,7 +2,9 @@
 
 [Let's build a browser engine!](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)を読んで、ブラウザエンジンを作ってみる。
 
-![image](https://limpet.net/mbrubeck/images/2014/pipeline.svg)
+<p style="background-color: white;">
+  <image src="https://limpet.net/mbrubeck/images/2014/pipeline.svg" />
+</p>
 
 ## Part1 & Part2
 
