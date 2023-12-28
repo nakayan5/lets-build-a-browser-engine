@@ -6,6 +6,14 @@
   <image src="https://limpet.net/mbrubeck/images/2014/pipeline.svg" />
 </p>
 
+## Command
+
+```bash
+$ cargo build
+
+$ ./target/debug/lets-build-a-browser-engine --html examples/test.html --css examples/test.css
+```
+
 ## Part1 & Part2
 
 HTML の文字列を受け取って、DOM ツリーを構築する。
