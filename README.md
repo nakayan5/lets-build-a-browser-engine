@@ -100,3 +100,4 @@ layout モジュールの入力はパート 4 のスタイルツリーで、出�
 その他
 
 - https://shikiyura.com/2022/08/install_the_multiple-runtime-versions_management_tool__asdf/
+- [Eliminate content repaints with the new Layers panel in Chrome](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752/?gi=cd6271834cea)

@@ -26,18 +26,18 @@ pub struct Dimensions {
 }
 
 #[derive(Clone, Copy, Default, Debug)]
-struct Rect {
-    x: f32,
-    y: f32,
-    width: f32,
-    height: f32,
+pub struct Rect {
+    pub x: f32,
+    pub y: f32,
+    pub width: f32,
+    pub height: f32,
 }
 #[derive(Clone, Copy, Default, Debug)]
-struct EdgeSizes {
-    left: f32,
-    right: f32,
-    top: f32,
-    bottom: f32,
+pub struct EdgeSizes {
+    pub left: f32,
+    pub right: f32,
+    pub top: f32,
+    pub bottom: f32,
 }
 
 // Block and Inline Layout
@@ -52,12 +52,11 @@ pub struct LayoutBox<'a> {
     pub children: Vec<LayoutBox<'a>>,
 }
 
-enum BoxType<'a> {
+pub enum BoxType<'a> {
     BlockNode(&'a StyledNode<'a>),
     InlineNode(&'a StyledNode<'a>),
     AnonymousBlock,
 }
-
 /**
  * レイアウト・ツリーを構築するには、各DOMノードのdisplayプロパティを調べる必要があります。
  * ノードのdisplay値を取得するコードをstyleモジュールに追加しました。
