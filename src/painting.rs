@@ -113,10 +113,10 @@ fn render_borders(list: &mut DisplayList, layout_box: &LayoutBox) {
     ));
 }
 
-struct Canvas {
-    pixels: Vec<Color>,
-    width: usize,
-    height: usize,
+pub struct Canvas {
+    pub pixels: Vec<Color>,
+    pub width: usize,
+    pub height: usize,
 }
 
 impl Canvas {
@@ -144,8 +144,8 @@ impl Canvas {
                 let x1 = (rect.x + rect.width).clamp(0.0, self.width as f32) as usize;
                 let y1 = (rect.y + rect.height).clamp(0.0, self.height as f32) as usize;
 
-                for y in (y0..y1) {
-                    for x in (x0..x1) {
+                for y in y0..y1 {
+                    for x in x0..x1 {
                         // TODO: alpha compositing with existing pixel
                         self.pixels[x + y * self.width] = color;
                     }
