@@ -97,6 +97,9 @@ layout モジュールの入力はパート 4 のスタイルツリーで、出�
 
 - [How web browsers work - parsing the HTML (part 3, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-html-part-3-with-illustrations-45fi)
 
+- [ちいさな Web ブラウザを作ってみよう](https://browserbook.shift-js.info/)
+  - [Webブラウザセキュリティ Webアプリケーションの安全性を支える仕組みを整理する](https://www.amazon.co.jp/Web%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3-Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%AE%89%E5%85%A8%E6%80%A7%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E6%95%B4%E7%90%86%E3%81%99%E3%82%8B-%E7%B1%B3%E5%86%85%E8%B2%B4%E5%BF%97/dp/4908686106/ref=sr_1_1?crid=1PTQJV3GP886B&keywords=web%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3&qid=1704267627&sprefix=web%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%2Caps%2C190&sr=8-1)
+
 実装
 
 - [robinson](https://github.com/mbrubeck/robinson)
